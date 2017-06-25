@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="script.js"></script>
+<title>Caesar Cipher</title>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+
+  #varianceInput {
+    width: 25em;
+  }
+  #buttonsContainer {
+    margin-top: 0.5em;
+  }
+</style>
+</head>
+<body>
+<div>
+  <h2>Caesar Cipher</h2>
+  <textarea id="inputText" rows="4" cols="50" placeholder="text to encode..."></textarea><br />
+  <input id="varianceInput" type="number" placeholder="shift amount (e.g. '11', '-2')..." />
+ <div id="buttonsContainer">
+   <button
+    type="button" 
+    onclick="onEncodePress()">
+    ENCODE
+    </button>
+  &nbsp;
+  <button
+    type="button" 
+    onclick="onDecodePress()">
+    DECODE
+    </button>
+ </div>
+  <div>
+    <h3>RESULT:</h3>
+    <div id="resultText">
+    </div>
+  </div>
+</div>
+</body>
+</html>
